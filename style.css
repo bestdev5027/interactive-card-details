@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/bg-main-desktop.png);
+    background-repeat: no-repeat;   
+    min-height: 120vh;
+    z-index: 1;
+    position: absolute;
+    
+    
+}
+.card{
+    display: inline-flex;
+    margin-top: 100px;
+    column-gap: 10px;
+    z-index: 2;
+
+}
+
+.front img{
+    top: 145px;
+    left: 190px;
+    position: absolute;
+    width: 380px;
+    height: 200px;
+}
+.back img{
+    top: 370px;
+    left: 260px;
+    position: absolute;
+    width: 380px;
+    height: 200px;
+}
+.circle{
+   display: block;
+}
+
+.circle-1{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    break-after: auto;
+    display: grid;
+    position: absolute;
+    top: 160px;
+    left: 210px;
+    
+}
+.circle-2{
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    break-after: auto;
+    display: grid;
+    position: absolute;
+    top: 176px;
+    left: 280px;
+    
+}
+
+.card .number{
+    
+    z-index: 3;
+    top: 145px;
+    left: 215px;
+    break-after: auto;
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+    line-height: 2;
+    color: #fff; 
+}
+.card .number p .name{
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 0.5em;
+    letter-spacing: 0;
+    word-spacing: 0.1em;
+}
+
+
+.card .cvv p{
+    z-index: 3;
+    top: 360px;
+    left: 250px;
+    break-after: auto;
+    position: relative;;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+
+form{
+    top: 220px;
+    left: 800px;
+    break-after: auto;
+    position: absolute;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 0.8em;
+}
+label{
+    font-size: 0.8em;
+    font-weight: bold;
+    
+}
+
+form  .inputBox span{
+    display: block;
+    
+}
+
+form .inputBox select{
+    width: 100%;
+    padding: 11px 7px 11px 7px;
+    border-radius: 5px;
+    border: 1px solid purple;
+    color: #000;
+}
+form .fl{
+    display: flex;
+    justify-content:flex-start;
+    align-content: center;
+    gap: 3px;
+}
+
+
+form .inputBox input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid purple;
+    color: #000; 
+}
+
+
+span{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 10px;    
+}
+
+.tt input{
+    margin-top: 5px;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 12px 97px 12px 3px;
+    border-radius: 5px;
+    border: 1px solid purple;
+}
+
+    
+button{
+    margin-top: 15px;
+    padding: 13px 115px 13px 115px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(8, 8, 37);
+    color: #fff;
+    cursor: grab;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:active {
+    color: #000;
+}
+/* second page */
+.thanks{
+    top: 260px;
+    left: 800px;
+    break-after: auto;
+    position: absolute;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 0.8em;
+    display: grid;
+    grid-row: auto;
+    place-items: center;
+}
+
+.thanks img{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 30px;
+}
+
+.thanks h2{
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.thanks p{
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: gray;
+
+}
+
+.thanks button{
+    cursor:grab;
+}
+
+
+/* || MOBILE DEVIC */
+@media screen and (max-width: 481px){
+    body{
+        background-image: url(img/bg-main-mobile.png);
+        background-repeat: no-repeat;   
+        min-height: 50vh;           
+        position: absolute;
+        z-index: 1;
+    }
+
+    .back img{
+       position: fixed;
+       top: 40px;
+       left: 55px;
+       width: 300px;
+       height: 150px;
+       
+    }
+
+    .front img{
+        z-index: 3;
+        position: fixed;
+        top: 132px;
+        left: 10px;
+        width: 300px;
+        height: 170px;
+        
+    }
+    .circle-1{
+        z-index: 4;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        break-after: auto;
+        display: grid;
+        position: fixed;
+        top: 150px;
+        left: 50px;
+        
+    }
+    .circle-2{
+        z-index: 4;
+        border: 1px solid #fff;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        break-after: auto;
+        display: grid;
+        position: fixed;
+        top: 164px;
+        left: 105px;
+        
+    }
+    .card .number{
+    
+        z-index: 4;
+        top: 210px;
+        left: 45px;
+        break-after: auto;
+        position: fixed;
+        font-weight: bold;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
+        line-height: 2;
+        color: #fff; 
+    }
+    .card .number p .name{
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 0.5em;
+        letter-spacing: 0;
+        word-spacing: 0.08em;
+    }
+    .card .cvv p{
+        z-index: 4;
+        top: 110px;
+        left: 300px;
+        break-after: auto;
+        position: fixed;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 0.8em;
+    }
+    
+    
+    form{
+        top: 360px;
+        left: 10px;
+        break-after: auto;
+        position: relative;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000;
+        font-size: 0.8em;
+    }
+    label{
+        font-size: 1.2em;
+        font-weight: bold;
+        
+    }
+    
+        form .inputBox select{
+        width:100%;
+        padding: 15px 7px 15px 7px;
+        border-radius: 5px;
+        border: 1px solid purple;
+        color: #000;
+    }
+        
+    form .inputBox input{
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid purple;
+        color: #000; 
+    }
+    
+    span{
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 2px;
+        margin-bottom: 10px;    
+    }
+    
+  
+    input{
+        margin-bottom: 30px;
+        padding: 15px 160px 15px 20px;
+        border-radius: 5px;
+        border: 1px solid purple;
+    }
+    
+        
+    button{
+        margin-top: 15px;
+        padding: 20px 150px 20px 150px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(8, 8, 37);
+        color: #fff;
+        cursor: grab;
+    }
+    .thanks{
+        top: 350px;
+        left: 10px;
+        break-after: auto;
+        position: absolute;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000;
+        font-size: 0.8em;
+        display: grid;
+        grid-row: auto;
+        place-items: center;
+    }
+    
+    .thanks img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 60px;
+    }
+    
+    .thanks h2{
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 20px;
+    
+    }
+    .thanks p{
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 30px;
+        color: gray;
+    
+    }
+    
+    .thanks button{
+        cursor:grab;
+    }
+    
+          
+}
